@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://m31lab.github.io'),
