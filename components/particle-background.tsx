@@ -71,8 +71,8 @@ export function ParticleBackground({ className = "" }: ParticleBackgroundProps) 
         }
 
         // Boundary check with bounce
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        if (this.x < 0 || this.x > canvas!.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas!.height) this.speedY *= -1;
 
         // Return to original position very slowly
         const returnSpeed = 0.002;
