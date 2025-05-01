@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://m31lab.github.io'),
@@ -94,6 +93,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
