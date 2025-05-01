@@ -2,6 +2,10 @@ import * as React from 'react';
 
 import { cn } from '@/lib/utils';
 
+/**
+ * Card component is a container with rounded corners, border, background, and shadow.
+ * It serves as the main wrapper for card content.
+ */
 const Card = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -17,6 +21,10 @@ const Card = React.forwardRef<
 ));
 Card.displayName = 'Card';
 
+/**
+ * CardHeader component is a flex container for the header section of the card.
+ * It arranges its children vertically with spacing and padding.
+ */
 const CardHeader = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -29,6 +37,10 @@ const CardHeader = React.forwardRef<
 ));
 CardHeader.displayName = 'CardHeader';
 
+/**
+ * CardTitle component renders the title of the card.
+ * It uses a heading element with large font size and tight tracking.
+ */
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLHeadingElement>
@@ -44,6 +56,10 @@ const CardTitle = React.forwardRef<
 ));
 CardTitle.displayName = 'CardTitle';
 
+/**
+ * CardDescription component renders a description text for the card.
+ * It uses smaller, muted text styling.
+ */
 const CardDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
@@ -56,6 +72,10 @@ const CardDescription = React.forwardRef<
 ));
 CardDescription.displayName = 'CardDescription';
 
+/**
+ * CardContent component is a container for the main content of the card.
+ * It provides padding with no top padding.
+ */
 const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -64,6 +84,10 @@ const CardContent = React.forwardRef<
 ));
 CardContent.displayName = 'CardContent';
 
+/**
+ * CardFooter component is a flex container for the footer section of the card.
+ * It aligns items center with padding and no top padding.
+ */
 const CardFooter = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>

@@ -14,7 +14,12 @@ interface CodeBlockProps {
   className?: string;
 }
 
+/**
+ * CodeBlock component renders a syntax-highlighted code block using Prism.js.
+ * It highlights the code whenever the `code` prop changes.
+ */
 export function CodeBlock({ code, language, className = '' }: CodeBlockProps) {
+  // Highlight all code blocks on component mount and whenever `code` changes
   useEffect(() => {
     Prism.highlightAll();
   }, [code]);
